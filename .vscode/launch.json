@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Debug js",
+            "port": 5858,
+            "localRoot": "${workspaceFolder}/src/js",
+            "remoteRoot": "/usr/src/dev/js",
+        },
+        {
+            "type": "python",
+            "request": "attach",
+            "name": "Debug python",
+            "port": 5678,
+            "localRoot": "${workspaceRoot}/src/python",
+            "remoteRoot": "/usr/src/dev/python",
+        }
+    ]
+}

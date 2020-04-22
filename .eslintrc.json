@@ -1,0 +1,45 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": ["semistandard", "standard-jsx", "plugin:prettier/recommended"],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "Twilio": "readonly"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "globalReturn": true
+        },
+        "ecmaVersion": 2018
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "indent": ["error", 4],
+        "space-before-function-paren": ["error", "always"],
+        "camelcase": "off",
+        "prettier/prettier": "warn",
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": ["error", 4],
+        "react/jsx-handler-names": "off"
+    },
+    "overrides": [
+        {
+          "files": ["*Config.js", "*config.js*", "*example.js*"],
+          "rules": {
+            "no-unused-expressions": "off",
+            "no-unused-vars": "off",
+            "no-undef": "off"
+          }
+        }
+    ] 
+}

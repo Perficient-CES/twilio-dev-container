@@ -1,0 +1,16 @@
+{
+  "name": "twilio-run",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "twilio-run --live --port=5566",
+    "remote": "twilio-run --live --port=5566 --ngrok",
+    "debug": "twilio-run --live --port=5566 --ngrok --inspect=0.0.0.0:5858"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "twilio": "^3.42.2"
+  }
+}

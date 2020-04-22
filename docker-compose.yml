@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+    twilio-dev-container:
+        build:
+            context: .
+        ports:
+            - '4040:4040' # ngrok web interface
+            - '5566:5566' # twilio-run port
+            - '5858:5858' # inspector debug port
+            - '5678:5678' # ptvsd debug port
+        volumes:
+            - ./src:/usr/src/dev
+            - ./src/scratch:/usr/src/dev/scratch
+            - ./ngrok.yml:/root/.ngrok2/ngrok.yml
+            - node-modules:/usr/src/dev/js/node_modules
+            # - global-node-modules:/usr/local/lib/node_modules
+            # - local-bin:/usr/local/bin
+        env_file: .env
+
+volumes:
+    node-modules: # persist local node_modules
+    # global-node-modules: # persist global node_modules
+    # local-bin: # persist aliases/symlinks

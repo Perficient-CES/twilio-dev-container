@@ -1,0 +1,16 @@
+scratch/
+
+# dotenv environment variables file
+.env
+
+# virtualenv
+**/python/**/bin
+**/python/**/include
+**/python/**/lib
+
+package-lock.json
+
+*.log
+npm-debug.log*
+
+node_modules
