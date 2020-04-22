@@ -1,0 +1,2 @@
+# config file reference - https://ngrok.com/docs#config
+web_addr: 0.0.0.0:4040
