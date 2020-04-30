@@ -8,6 +8,8 @@ scratch/
 **/python/**/include
 **/python/**/lib
 
+.twilio-functions
+
 package-lock.json
 
 *.log
