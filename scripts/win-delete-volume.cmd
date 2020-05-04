@@ -19,7 +19,7 @@ if defined files_exist (
     )
 
 ) else (
-    echo No Dockerfile or docker-compose.yml found for current directoy %CD%
+    echo No Dockerfile or docker-compose.yml found for current directory %CD%
     echo Run this command directly in the directory containing both Dockerfile and docker-compose.yml
 )
 
